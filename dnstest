@@ -1,0 +1,262 @@
+poc@poc-dns-subscriber-2:~$ ./run-dnsperf-capacity.sh
+==============================================
+ F5 DNS Capacity Test
+==============================================
+DNS Server : 172.16.104.10
+Query File : cache-test.list
+Threads    : 8
+Duration   : 60s / test
+Clients    : 40 80 160 320 640 1000
+==============================================
+
+
+==============================================
+ TEST: 40 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:23:17 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 40 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:23:17 2026
+[Status] Stopping after 60.000000 seconds
+1789464202.154992: 93019.519769
+1789464207.160491: 99034.282097
+1789464212.165750: 97868.262162
+1789464217.170513: 105129.054063
+1789464222.175693: 102570.337131
+1789464227.181354: 102504.144807
+1789464232.185519: 103718.202737
+1789464237.192143: 104466.203174
+1789464242.201503: 103534.184008
+1789464247.206527: 102983.322358
+1789464252.211614: 104302.282857
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         6088590
+  Queries completed:    6088590 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 6088590 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.619696
+  Queries per second:   100439.137801
+
+  Average Latency (s):  0.000831 (min 0.000211, max 0.798358)
+  Latency StdDev (s):   0.002184
+
+
+Test completed: clients=40 return_code=0
+
+==============================================
+ TEST: 80 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:24:17 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 80 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:24:17 2026
+[Status] Stopping after 60.000000 seconds
+1789464262.859816: 99578.324627
+1789464267.864533: 97913.628283
+1789464272.869500: 101526.343730
+1789464277.874513: 104542.186004
+1789464282.879594: 103393.731290
+1789464287.884515: 101166.032391
+1789464292.889668: 103563.067902
+1789464297.894495: 100656.626093
+1789464302.899692: 100931.292015
+1789464307.904736: 104508.172156
+1789464312.909554: 101754.948931
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         6103069
+  Queries completed:    6103069 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 6103069 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.007617
+  Queries per second:   101704.905229
+
+  Average Latency (s):  0.000791 (min 0.000229, max 0.450941)
+  Latency StdDev (s):   0.001064
+
+
+Test completed: clients=80 return_code=0
+
+==============================================
+ TEST: 160 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:25:17 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 160 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:25:17 2026
+[Status] Stopping after 60.000000 seconds
+1789464322.951598: 95979.152612
+1789464327.956502: 91290.462315
+1789464332.961607: 96827.938675
+1789464337.966771: 96242.600642
+1789464342.971567: 87749.830363
+1789464347.976547: 91560.605637
+1789464352.982522: 91864.621777
+1789464357.987756: 91940.956207
+1789464362.992851: 88991.717440
+1789464367.997489: 93295.459132
+1789464373.002496: 95118.947886
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         5566614
+  Queries completed:    5566614 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 5566614 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.003585
+  Queries per second:   92771.356911
+
+  Average Latency (s):  0.000812 (min 0.000233, max 0.573066)
+  Latency StdDev (s):   0.001615
+
+
+Test completed: clients=160 return_code=0
+
+==============================================
+ TEST: 320 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:26:17 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 320 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:26:17 2026
+[Status] Stopping after 60.000000 seconds
+1789464383.045596: 74719.880623
+1789464388.050683: 81292.493018
+1789464393.056123: 80457.462281
+1789464398.061094: 80006.857183
+1789464403.065491: 80339.949049
+1789464408.070779: 76481.513152
+1789464413.075491: 79901.301014
+1789464418.080486: 79422.656766
+1789464423.085866: 83277.393525
+1789464428.090488: 81765.016419
+1789464433.095717: 77361.495348
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         4771254
+  Queries completed:    4771254 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 4771254 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.001012
+  Queries per second:   79519.558770
+
+  Average Latency (s):  0.000815 (min 0.000217, max 0.441803)
+  Latency StdDev (s):   0.001200
+
+
+Test completed: clients=320 return_code=0
+
+==============================================
+ TEST: 640 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:27:18 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 640 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:27:18 2026
+[Status] Stopping after 60.000000 seconds
+1789464443.150033: 58534.642846
+1789464448.154491: 58826.949891
+1789464453.159501: 56047.440465
+1789464458.164488: 59829.725831
+1789464463.169500: 55074.593228
+1789464468.175030: 56965.196493
+1789464473.179488: 57330.084497
+1789464478.184495: 59770.545775
+1789464483.189491: 57909.736591
+1789464488.194692: 55053.733107
+1789464493.199558: 57218.714747
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         3461172
+  Queries completed:    3461172 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 3461172 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.002571
+  Queries per second:   57683.728252
+
+  Average Latency (s):  0.000860 (min 0.000246, max 0.458278)
+  Latency StdDev (s):   0.001411
+
+
+Test completed: clients=640 return_code=0
+
+==============================================
+ TEST: 1000 CONCURRENT CLIENTS
+==============================================
+Tue Sep 15 04:28:18 PM WIB 2026
+DNS Performance Testing Tool
+Version 2.15.0
+
+[Status] Command line: dnsperf -s 172.16.104.10 -d cache-test.list -T 8 -c 1000 -l 60 -S 5
+[Status] Sending queries (to 172.16.104.10:53)
+[Status] Started at: Tue Sep 15 16:28:18 2026
+[Status] Stopping after 60.000000 seconds
+1789464503.260488: 42714.983665
+1789464508.265550: 43045.221018
+1789464513.270696: 42526.631591
+1789464518.275490: 41284.616310
+1789464523.280485: 43119.123995
+1789464528.285581: 42525.458053
+1789464533.290498: 43301.217583
+1789464538.296516: 44410.547465
+1789464543.301487: 42119.924371
+1789464548.306488: 41988.003599
+1789464553.311491: 44069.703854
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         2570807
+  Queries completed:    2570807 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 2570807 (100.00%)
+  Average packet size:  request 28, response 64
+  Run time (s):         60.004816
+  Queries per second:   42843.344441
+
+  Average Latency (s):  0.000918 (min 0.000237, max 0.412296)
+  Latency StdDev (s):   0.001332
+
+
+Test completed: clients=1000 return_code=0
+
+==============================================
+ CAPACITY TEST COMPLETE
+==============================================
+poc@poc-dns-subscriber-2:~$ 
